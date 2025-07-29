@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/esferaCincoEstrelas.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Dragon Ball</title>
+</head>
+<body>
+    <div id="index">
+        <div id="dragon">
+            <div id="cabecalho">
+                <img src="assets/esferaCincoEstrelas.png" alt="esfera" id="minhaBola">
+                <h1>Dragon Ball Explorer</h1>
+                <img src="assets/esferaCincoEstrelas.png" alt="esfera" id="minhaBola">
+            </div>
+            <h4>Explore o universo do Dragon Ball e descubra seus personagens favoritos.</h4>
+            <div id="conteudo">
+                <img src="assets/lupaLaranja.png" alt="lupa" id="lupa">
+                <div id="campo">
+                    <p>Digite algo: </p>
+                    <input type="text" id="anText">
+                </div>
+                <img src="assets/filtro.png" alt="filtro" id="filtro">
+                <div id="campo">
+                    <p>Escolha uma opcão: </p>
+                    <select>
+                        <option></option>
+                        <option>Human</option>
+                        <option>Saiyan</option>
+                        <option>Namekian</option>
+                        <option>Majin</option>
+                        <option>Frieza Race</option>
+                        <option>Android</option>
+                        <option>Jiren Race</option>
+                        <option>Nucleico</option>
+                        <option>Nucleico benigno</option>
+                        <option>God</option>
+                        <option>Angel</option>
+                        <option>Evil</option>
+                        <option>Unknown</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="procurar"><img src="assets/lupaPreta.png" alt="lupa" id="lupaProcurar"></button>
+                </div>
+            </div>
+        </div>
+        <div id="resultadoPersonagens">
+        </div>
+        <div>
+            <h3 id="nome"></h3>
+            <img alt="" id="imagemAPI" style="opacity: 0;">
+        </div>
+    </div>
+    <script src="dragonBall.js"></script>
+</body>
+</html>
